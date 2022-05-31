@@ -1,0 +1,97 @@
+.home__display{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+   
+
+    .home__infos{
+        h3{
+            color: $white;
+            letter-spacing: 2px;
+        }
+        h1{
+            color: $red;
+            letter-spacing: 3px;
+        }
+        p{
+            color: $white;
+        }
+    }
+
+    .home__react__logo{
+        width: 50px;
+        height: 50px;
+        img{
+            width: 100%;
+            height: auto;
+            animation: logoReact infinite 7s linear;
+        }
+    }
+
+    .home__img{
+        width: 250px;
+        height: 250px;
+
+        img{
+            width: 100%;
+            height: auto;
+            border: 2px solid $red;
+            border-radius: 50%;
+        }
+    }
+}
+
+.home__sociaux{
+    margin: 1rem 0;
+    > * + *{
+        margin-left: 1rem;
+    }
+    a{
+        cursor: pointer;
+        box-shadow: 1 4px 8px rgba(0, 0, 0, .8);
+    }
+}
+
+@keyframes logoReact {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.nav__end{
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .nav__end__link{
+        a{
+            color: $red;
+            transition: .3s ease-in;
+
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .home__display{
+        grid-template-columns: 1fr;
+    }
+}

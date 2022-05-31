@@ -1,0 +1,33 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav__logo h1{
+        color: $red;
+        font-size: 3rem;
+    }
+
+    .nav__accueil{
+        width: 30px;
+        height: 30px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .nav__contact{
+        a{
+            border: 2px solid $red;
+            padding: 12px 18px;
+            transition: .3s ease-in;
+            color: $red;
+
+            &:hover{
+                background-color: $red;
+                color: $blue;
+                font-weight: bold;
+            }
+        }
+    }
+}

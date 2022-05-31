@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "LobsterTwo-Regular";
+    src: url(./fonts/LobsterTwo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+$blue: #050c1a;
+$red: #de2e4b;
+$white: #fff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: $blue;
+}
+
+button,textarea,input{
+    font-family: Montserrat-Regular, sans-serif;
+}
+
+h1,h2,h3{
+    font-family: LobsterTwo-Regular, sans-serif;
+    font-weight: bold;
+}
+
+p{
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.container{
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fond__text h1{
+    position: fixed;
+    z-index: -1;
+    top: 4rem;
+    color: #202020;
+    font-size: 6rem;
+
+}
+
+.section__title{
+    text-align: center;
+    h1{
+        color: $red;
+        margin-top: 2rem;
+        letter-spacing: 1px;
+    }
+    p{
+        color: $white;
+    }
+}
+
+.footer__infos{
+    p{
+        text-align: center;
+        color: $white;
+        margin: 1rem 1rem;
+    }
+}
+
+
+@import './layouts/navigation';
+@import './layouts/home';
+@import './layouts/about';
+@import './layouts/project';
+@import './layouts/contact';
+
